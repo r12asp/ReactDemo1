@@ -1,0 +1,167 @@
+$base: 16px;
+html,
+body {
+    height: 100%;
+    min-height: 100vh;
+}
+
+#app {
+    min-height: 100vh;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.WebLink {
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    span {
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+
+.card {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.nestedListItem {
+    background: none !important;
+}
+
+.list {
+    list-style-type: none;
+    max-width: 962px;
+    width: 100%;
+    margin: 0 auto;
+    border-top: 1px solid #eee;
+    cursor: pointer;
+    color: blue;
+}
+
+.list:last-of-type {
+    border-bottom: 2px solid #e3e3e3;
+}
+
+.list:first-of-type {
+    border-top: 2px solid #e3e3e3;
+}
+
+.list li {
+    display: inline;
+    padding-right: 5px;
+}
+
+.list ul div {
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #efefef;
+    color: black;
+}
+
+.page-header-text {
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+.user-search-component,
+.role-search-component {
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.user-search-header,
+.role-search-header {
+    margin-bottom: 1px;
+    font-weight: 100
+}
+
+.user-search-item,
+.role-search-item {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.user-action-buttons-bottom {
+    margin-top: 20px;
+}
+
+.role-action-buttons-bottom {
+    margin-top: 20px;
+}
+
+.role-application-section {
+    margin-bottom: 20px;
+}
+
+.application-claim-section {
+    padding-left: 40px;
+    padding-right: 50px;
+}
+
+.role-claims-header {
+    margin-left: 0px;
+}
+
+.role-states-header {
+    margin-left: 0px;
+}
+
+.error-messages {
+    position: relative;
+    bottom: 15px;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgb(244, 67, 54);
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+.error-messages-list {
+    padding-top: 10px;
+}
+
+.table-cell-wrap {
+    white-space: normal !important;
+}
+
+.disabled-div {
+    pointer-events: none;
+}
+
+.enabled-div {
+    pointer-events: auto;
+}
+
+
+/* Don't allow x scroll on search*/
+
+div.ag-body-viewport {
+    overflow-x: hidden;
+}
+
+.ui-grid,
+.ui-grid-viewport,
+.ui-grid-canvas {
+    height: auto !important;
+}
