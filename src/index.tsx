@@ -10,6 +10,7 @@ import store from "./redux/store/store";
 import { ServerAppBasename } from "./../src/config/appUrlConfig";
 import App from "./app";
 import "./styles/styles.scss"; 
+import 'rxjs';
 
 const muiTheme = getMuiTheme(theme);
 

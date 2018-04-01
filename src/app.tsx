@@ -9,6 +9,12 @@ import IconButton from 'material-ui/IconButton';
 import Addme from "./containers/Addme";
 import OrderSearch from "./containers/OrderSearch";
 
+const styles = {
+  container: {
+    marginLeft: '30px',
+    marginRight: '30px'
+  }
+}
 
 
 class App extends React.Component<any, any> {
@@ -27,6 +33,7 @@ class App extends React.Component<any, any> {
             iconClassNameRight="muidocs-icon-navigation-expand-more"
             onLeftIconButtonClick={() => this.setState({open: !this.state.open})}
           />
+          <div style={styles.container}>
         <h1>my test new</h1>
         <Drawer open={this.state.open}>
           <IconButton style={{"backgroundColor":"grey"}} iconClassName="muidocs-icon-navigation-expand-more" onClick={() => this.setState({open: !this.state.open})} />
@@ -36,6 +43,7 @@ class App extends React.Component<any, any> {
 
         <Route exact path="/" component={OrderSearch} />
         <Route path="/test" component={Addme} />
+        </div>
       </div>
       </Router>
       )

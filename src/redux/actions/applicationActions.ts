@@ -1,5 +1,4 @@
 import * as types from "./actionTypes";
-
 import { IApplication } from "./../../models";
 
 export function loadApplicationsSuccess(payload) {
@@ -7,7 +6,9 @@ export function loadApplicationsSuccess(payload) {
 }
 
 export function loadApplications() {
-	return function(dispatch) {
-        dispatch(loadApplicationsSuccess({id:33,name:"999999999999"}));
-	};
+	return { type: types.LOAD_APPLICATIONS_START };
 } 
+
+export const loadTestStart = () => ({type: types.LOAD_TEST_START});
+
+export const loadTestSuccess = (payload) => ({type: types.LOAD_TEST_SUCCESS, payload: payload});

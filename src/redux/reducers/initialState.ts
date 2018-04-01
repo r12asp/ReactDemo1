@@ -6,4 +6,7 @@ export const initialState: IStoreState = {
         id: 0,
         name: "tt"
     },
+    test: {
+        testName: "from initialStart"
+    },
 }

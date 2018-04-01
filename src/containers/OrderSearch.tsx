@@ -28,7 +28,7 @@ class orderSearch extends React.Component<IOrderSearchProps,any>{
     }
 
     componentDidMount() {
-        this.props.actions.loadApplications();
+       this.props.actions.loadApplications();
     }
 
     render() {
