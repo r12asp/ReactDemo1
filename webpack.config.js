@@ -1,12 +1,12 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
-let webpack = require('webpack');
-var path = require('path');
+import webpack from 'webpack';
+import path from 'path';
 
 var BUILD_DIR = path.resolve(__dirname, 'dist/');
 var APP_DIR = path.resolve(__dirname, 'src/');
 
-var config = {
+export default {
   resolve:{
     extensions: ['.ts', '.tsx', '.js', '.jsx']
   },
@@ -44,4 +44,3 @@ var config = {
   ],
 };
 
-module.exports = config;
